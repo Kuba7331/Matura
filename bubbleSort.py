@@ -1,8 +1,9 @@
 import random
+import time
 
 a = []
 
-for i in range(0, 20):
+for i in range(0, 5000):
     a.append(random.randint(1,100))
 
 print("Un-sorted list:")
@@ -17,4 +18,7 @@ def bubbleSort(listOfNumbers):
     return listOfNumbers
 
 print("Sorted list")
+timeStart = time.time()
 print(bubbleSort(a))
+timeStop = time.time()
+print("In time:", str(round(timeStop - timeStart, 2)))
