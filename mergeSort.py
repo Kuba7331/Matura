@@ -4,12 +4,16 @@ import time
 tabel = []
 
 
-for i in range(0, 5000):
-    tabel.append(random.randint(0,10000))
+for i in range(0, 10):
+    tabel.append(random.randint(0,10))
 
 print("Tabel before merge sort:")
 for i in tabel:
     print(i, end=" ")
+
+# Merge Sort - sortowanie poprzez scalanie. Algorytm ten, sortuje tablice, dzielac je na dwie posortowane juz polowy, az napotka pojedynczy element.
+# Jesli dany element jest mniejszy od wyznaczonego srodka, laduje on po lewej stronie tablicy. Jesli jest wiekszy, laduje po prawej stronie tablicy.
+# Kazda z połów tablicy, ma swoj srodek. Zatem, dla pojedynczych elementow, porownuje sie je miedzy srodkami nastepnych, coraz to wiekszych polow, az wroci sie do postaci calej tablicy.
 
 def mergeSort(listOfNumbers):
     middle = len(listOfNumbers) // 2
