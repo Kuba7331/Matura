@@ -1,3 +1,8 @@
+
+# Szyfr przestawieniowy - algorytm zamienia miejsca znakow ze soba wzajemnie o okreslony klucz. (wartosc n-indeksow, dla którego ma byc miejsce zamienionego znaku)
+# Przy szyfrze przestawieniowym dlugosc znakow sie nie zmienia, a jedynie polozenie wszystkich jego znakow miejscami schematem.
+# Zawartosc znakow z danego stringa sie nie zmienia.
+
 def transpositionCipher(text):
     encrypted = []
     for i in range(1, len(text), 2):
