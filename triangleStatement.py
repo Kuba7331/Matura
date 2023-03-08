@@ -17,6 +17,9 @@ print("Boki trojkata rosnaco:")
 for j in triangleTab:
     print(j, end=" ")
 
+# Algorytm trojkata - algorytm ten sprawdza, czy z danych bokow mozna otrzymac trojkat.
+# Dziala tutaj twierdzenie, mowiace o tym, ze jesli suma dwoch bokow jest wieksza od najdluzszego boku, to mozna z danych bokow stworzyc trojkat.
+
 def triangleStatement(triangle):
     if triangle[0] + triangle[1] > triangle[2]:
         return True
